@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Local datasets and generated experiment artifacts
+**/data/
+**/*.csv
+**/*.json
+**/.cache/
+**/results*/
+**/*_results/
+**/emotion_experiment*/
+**/emotion_cluster_experiment*/
+
+# Presentation/build artifacts
+*.pptx
+*.pdf
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

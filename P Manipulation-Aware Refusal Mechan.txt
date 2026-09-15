@@ -1,0 +1,12 @@
+P: Manipulation-Aware Refusal Mechanisms (1 of 2)
+
+
+Motivation: LLMs undergo extensive safety fine tuning to avoid harmful or potentially toxic generations. Few jailbreak attempts have show that it's possible to manipulate these models to coerce it into generating the potentially toxic text. (See example on next slide)
+Problem definition
+Consider the MentalManip dataset [1]. It consists of a Control set of dialogues (D_c) with no manipulation and a set of dialogues D_m exhibiting some kind of manipulation from a predefined set of manipulation techniques M.
+M = {Denial, Evasion, Feigning Innocence, Rationalization, Playing the Victim Role, Playing the Servant Role, Shaming or Belittlement, Intimidation, Brandishing Anger, Accusation, Persuasion or Seduction}
+Given a partial conversation context, first identify if manipulation is present in the user utterances.
+Then use this as a signal to adapt the model’s consequent response to not succumb to the manipulation and still remain polite, helpful assistant.
+The project will focus on manipulation detection, light weight model adaptation methods that can be applied to larger LLMs (considering the relatively smaller dataset size) and evaluation.
+Dataset
+https://github.com/audreycs/MentalManip/tree/main/mentalmanip_dataset
